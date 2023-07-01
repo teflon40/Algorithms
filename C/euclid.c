@@ -12,14 +12,6 @@ int gcd(int m, int n)
 	return m;
 }
 
-#include <stdio.h>
-
-int main(void)
-{
-	printf("%d\n", gcd(12, 4));
-	return 0;
-}
-
 	/* OR */
 int gcd1(int m, int n)
 {
