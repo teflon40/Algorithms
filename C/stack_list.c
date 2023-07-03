@@ -1,6 +1,11 @@
 #include <stdlib.h>
 
-/* Pushdown stack */
+/****************************************
+ * Pushdown stack data structure	*
+ *   Operations on push onto stacks	*
+ *   and pop from stacks using		*
+ *   linked lists			*
+ ****************************************/
 
 struct node {
 	int key;
