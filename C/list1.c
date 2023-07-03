@@ -6,6 +6,7 @@ struct node {
 };
 struct node *head, *z, *t;
 
+/* Initialize a list */
 void list_intitialize(void)
 {
 	head = (struct node *) malloc(sizeof *head);
@@ -14,11 +15,13 @@ void list_intitialize(void)
 	z->next = z;
 }
 
+/* Delete the next node */
 delete_next(struct node *t)
 {
-	t->next = t->next->next;
+	t->next = t->next->next; /* Bypasses the node to be deleted */
 }
 
+/* Insert after a specific node */
 struct node *insert_after(int v, struct node *t)
 {
 	struct node *x;
