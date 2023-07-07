@@ -21,28 +21,24 @@ void prime(int n)
  * function prime(n : integer):void;		*
  * 	var i, j, *a: integer;			*
  * 	begin					*
- * 	allocate memory				*
- * 	   a:=malloc(sizeof int * (n + 1));	*
- * 	if a=NULL then				*
- * 	   end;					*
  * 	a[1]:=0; i:=2				*
  * 	repeat					*
  * 	   a[i] = 1; i++;			*
- * 	until i<=n;				*
+ * 	until i>n;				*
  * 	i:=2					*
  * 	repeat					*
  * 	   j:=i*i				*
  * 	   repeat				*
  * 	      a[j]:=0; j:=j+i			*
- * 	   until j<=n;				*
+ * 	   until j>n;				*
  * 	   i++					*
- * 	until i*i<=n;				*
+ * 	until i*i>n;				*
  * 	i:=2					*
  * 	repeat					*
  * 	   if a[i]!=0 then			*
  * 	      print i				*
  * 	   i++					*
- * 	until i<=n;				*
+ * 	until i>n;				*
  * 	free(a)					*
  * 	end;					*
  ************************************************/
